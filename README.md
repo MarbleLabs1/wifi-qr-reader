@@ -79,4 +79,8 @@ MIT License - veja [LICENSE](LICENSE) para mais detalhes
 
 ## 👤 Autor
 
-**Seu Nome** - [@seu-usuario](https://github.com/MarbleCeo)
+**MarbleCeo** - [@MarbleCeo](https://github.com/MarbleCeo)
+
+## 🔖 Tags
+
+#WiFi #QRCode #LeitorQR #OpenSource #Linux #Python #PyQt5 #NetworkManager #AppImage #Snap
