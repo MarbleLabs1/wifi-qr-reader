@@ -1,0 +1,36 @@
+[metadata]
+name = wifi-qr-reader
+version = 1.0.0
+author = marbleceo
+author_email = marbleceo@github.com
+description = Leitor de QR Code de WiFi com visualização da câmera em tempo real
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/MarbleCeo/wifi-qr-reader
+license = GPL-3.0-or-later
+keywords = wifi, qr, code, scanner, network, camera
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+    Operating System :: OS Independent
+    Topic :: System :: Networking
+    Topic :: Utilities
+
+[options]
+python_requires = >=3.8
+packages = find:
+install_requires =
+    opencv-python>=4.6.0
+    PyQt5>=5.15.0
+    pyzbar>=0.1.9
+
+[options.entry_points]
+console_scripts =
+    wifi-qr-reader = wifi_qr_reader:main
+
+[options.packages.find]
+exclude = tests*
+
+[project.urls]
+Bug Reports = https://github.com/MarbleCeo/wifi-qr-reader/issues
+Source = https://github.com/MarbleCeo/wifi-qr-reader

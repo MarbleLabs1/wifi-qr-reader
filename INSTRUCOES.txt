@@ -1,0 +1,32 @@
+================================================
+WiFi QR Reader - by @marbleceo
+================================================
+
+LOCALIZACAO: /home/server/Downloads/wifi-qr-reader/
+
+COMO EXECUTAR O APP:
+  python3 wifi-qr-reader-gui.py
+
+COMO PUBLICAR NO GITHUB:
+  cd /home/server/Downloads/wifi-qr-reader
+  git push -u origin master
+
+ARQUIVOS DO PROJETO:
+  - wifi-qr-reader-gui.py    (App principal)
+  - README.md                 (Documentacao)
+  - LICENSE                   (GPL v3)
+  - setup.py                  (Para PyPI)
+  - pyproject.toml           (Para pacotes)
+  - CONTRIBUTING.md           (Como contribuir)
+  - snap/snapcraft.yaml      (Para Snap Store)
+
+LICENCA: GPL v3
+AUTOR: @marbleceo
+GITHUB: https://github.com/MarbleCeo/wifi-qr-reader
+
+SEGURANCA:
+  - 100% LOCAL (sem envio de dados)
+  - Nenhuma conexao externa
+  - Apenas usa nmcli local
+
+================================================
