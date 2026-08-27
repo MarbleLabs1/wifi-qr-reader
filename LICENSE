@@ -1,28 +1,32 @@
-                    GNU GENERAL PUBLIC LICENSE
-                       Version 3, 29 June 2007
+wifi-qr-reader
 
- Copyright (C) 2025 marbleceo
+Copyright (c) 2025 MarbleCeo. All rights reserved.
 
- This program is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
+This software and its source code are made available for personal,
+non-commercial use, viewing, and modification.
 
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+Commercial use of this software or any derivative of it — including selling,
+sublicensing, bundling into a paid product or service, or otherwise deriving
+revenue from it — requires a separate written agreement with the copyright
+holder and a royalty payment to the copyright holder. Contact MarbleCeo to
+arrange commercial licensing terms before any commercial use.
 
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <https://www.gnu.org/licenses/>.
+Redistribution of unmodified or modified copies for non-commercial purposes
+is permitted, provided this notice — including the commercial-use and
+royalty terms above — is retained.
 
-The full text of the GNU General Public License v3 can be found at:
-https://www.gnu.org/licenses/gpl-3.0.txt
+Note: earlier releases of this project were published under the GNU General
+Public License v3. That grant remains valid for the versions distributed
+under it at the time. The terms above apply from this version onward.
 
-------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-WiFi QR Reader - Leitor de QR Code de WiFi
-Autor: marbleceo
-GitHub: https://github.com/MarbleCeo/wifi-qr-reader
-
-This program is free software and comes with ABSOLUTELY NO WARRANTY.
+This application is built with PyQt6, which is distributed under the GNU GPL
+v3 and under a commercial licence from Riverbank Computing. Redistributing
+this application in binary form may require a commercial PyQt licence.

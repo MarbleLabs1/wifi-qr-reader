@@ -2,7 +2,7 @@
 
 Leitor de QR Code de WiFi com visualização da câmera em tempo real.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-noncommercial-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
 
 ## 📷 Funcionalidades
@@ -69,7 +69,9 @@ Pull requests são bem-vindos! Sinta-se à vontade para abrir issues para bugs o
 
 ## 📄 Licença
 
-MIT License - veja [LICENSE](LICENSE) para mais detalhes
+Uso pessoal e não-comercial é livre. Uso comercial (venda, sublicenciamento,
+inclusão em produto/serviço pago) requer acordo por escrito e pagamento de
+royalty ao autor — veja [LICENSE](LICENSE) para detalhes.
 
 ## 🔗 Links
 
