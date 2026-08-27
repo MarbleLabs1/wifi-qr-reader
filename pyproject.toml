@@ -1,36 +1,35 @@
-[metadata]
-name = wifi-qr-reader
-version = 1.0.0
-author = marbleceo
-author_email = marbleceo@github.com
-description = Leitor de QR Code de WiFi com visualização da câmera em tempo real
-long_description = file: README.md
-long_description_content_type = text/markdown
-url = https://github.com/MarbleCeo/wifi-qr-reader
-license = GPL-3.0-or-later
-keywords = wifi, qr, code, scanner, network, camera
-classifiers =
-    Programming Language :: Python :: 3
-    License :: OSI Approved :: GNU General Public License v3 (GPLv3)
-    Operating System :: OS Independent
-    Topic :: System :: Networking
-    Topic :: Utilities
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
 
-[options]
-python_requires = >=3.8
-packages = find:
-install_requires =
-    opencv-python>=4.6.0
-    PyQt5>=5.15.0
-    pyzbar>=0.1.9
-
-[options.entry_points]
-console_scripts =
-    wifi-qr-reader = wifi_qr_reader:main
-
-[options.packages.find]
-exclude = tests*
+[project]
+name = "wifi-qr-reader"
+version = "1.0.0"
+description = "Leitor de QR Code de WiFi com visualização da câmera em tempo real"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "See LICENSE" }
+authors = [{ name = "MarbleCeo", email = "marbleceo@github.com" }]
+keywords = ["wifi", "qr", "code", "scanner", "network", "camera"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Networking",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "opencv-python>=4.6.0",
+    "PyQt5>=5.15.0",
+    "pyzbar>=0.1.9",
+]
 
 [project.urls]
-Bug Reports = https://github.com/MarbleCeo/wifi-qr-reader/issues
-Source = https://github.com/MarbleCeo/wifi-qr-reader
+Homepage = "https://github.com/MarbleLabs1/wifi-qr-reader"
+"Bug Reports" = "https://github.com/MarbleLabs1/wifi-qr-reader/issues"
+Source = "https://github.com/MarbleLabs1/wifi-qr-reader"
+
+[project.scripts]
+wifi-qr-reader = "wifi_qr_reader:main"
+
+[tool.setuptools.packages.find]
+include = ["wifi_qr_reader*"]

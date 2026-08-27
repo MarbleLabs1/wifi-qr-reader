@@ -16,24 +16,21 @@ Leitor de QR Code de WiFi com visualização da câmera em tempo real.
 
 ## 🚀 Instalação
 
-### Snap Store (Recomendado)
+### Via pip
 ```bash
-sudo snap install wifi-qr-reader
+git clone https://github.com/MarbleLabs1/wifi-qr-reader.git
+cd wifi-qr-reader
+pip install .
+wifi-qr-reader
 ```
 
-### GitHub Releases
-Baixe o AppImage da [última release](https://github.com/MarbleCeo/wifi-qr-reader/releases)
+### Arch Linux (AUR)
+Pacote `wifi-qr-reader` — veja [`packaging/PKGBUILD`](packaging/PKGBUILD).
 
-### Manual
-```bash
-# Instalar dependências
-sudo apt install python3-pip python3-opencv python3-pyqt5
-pip3 install pyzbar
-
-# Baixar e executar
-wget https://github.com/MarbleCeo/wifi-qr-reader/releases/latest/download/wifi-qr-reader.py
-python3 wifi-qr-reader.py
-```
+### Flatpak
+Manifest em [`packaging/io.github.marbleceo.WifiQrReader.json`](packaging/io.github.marbleceo.WifiQrReader.json)
+— ainda não publicado no Flathub, veja [`packaging/README.md`](packaging/README.md)
+para o que falta.
 
 ## 💻 Como Usar
 
@@ -51,17 +48,8 @@ python3 wifi-qr-reader.py
 
 ## 📦 Empacotamento
 
-### Snap
-```bash
-cd snap
-snapcraft
-```
-
-### AppImage
-```bash
-pipx install pyinstaller
-pyinstaller --onefile --windowed wifi-qr-reader-gui.py
-```
+Ver [`packaging/`](packaging/) — inclui `PKGBUILD` (AUR), manifest Flatpak,
+`.desktop` e ícone.
 
 ## 🤝 Contribuindo
 
@@ -75,10 +63,8 @@ royalty ao autor — veja [LICENSE](LICENSE) para detalhes.
 
 ## 🔗 Links
 
-- [Snap Store](https://snapcraft.io/wifi-qr-reader)
-- [Issues](https://github.com/MarbleCeo/wifi-qr-reader/issues)
-- [Discussions](https://github.com/MarbleCeo/wifi-qr-reader/discussions)
+- [Issues](https://github.com/MarbleLabs1/wifi-qr-reader/issues)
 
 ## 👤 Autor
 
-**Seu Nome** - [@seu-usuario](https://github.com/MarbleCeo)
+**MarbleCeo** - [@MarbleCeo](https://github.com/MarbleCeo)

@@ -1,0 +1,62 @@
+{
+    "app-id": "io.github.marbleceo.WifiQrReader",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15-23.08",
+    "sdk": "org.kde.Sdk",
+    "command": "wifi-qr-reader",
+    "finish-args": [
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=all",
+        "--talk-name=org.freedesktop.NetworkManager",
+        "--talk-name=org.freedesktop.Flatpak"
+    ],
+    "modules": [
+        {
+            "name": "zbar",
+            "buildsystem": "autotools",
+            "config-opts": [
+                "--without-python",
+                "--without-gtk",
+                "--without-qt",
+                "--disable-video"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/mchehab/zbar/releases/download/0.23.93/zbar-0.23.93.tar.gz",
+                    "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+                }
+            ]
+        },
+        {
+            "name": "python3-requirements",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"opencv-python\" \"pyzbar\" \"PyQt5\""
+            ],
+            "sources": [
+                {
+                    "type": "comment",
+                    "_comment": "Placeholder — generate the real pinned source list with: python3 flatpak-pip-generator opencv-python pyzbar PyQt5 (from https://github.com/flatpak/flatpak-builder-tools/tree/master/pip). Run that once with network access and paste its output module here before building."
+                }
+            ]
+        },
+        {
+            "name": "wifi-qr-reader",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --no-index --no-build-isolation --prefix=${FLATPAK_DEST} .",
+                "install -Dm644 packaging/icon.svg /app/share/icons/hicolor/scalable/apps/io.github.marbleceo.WifiQrReader.svg",
+                "install -Dm644 packaging/io.github.marbleceo.WifiQrReader.desktop /app/share/applications/io.github.marbleceo.WifiQrReader.desktop",
+                "install -Dm644 packaging/io.github.marbleceo.WifiQrReader.metainfo.xml /app/share/metainfo/io.github.marbleceo.WifiQrReader.metainfo.xml"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".."
+                }
+            ]
+        }
+    ]
+}

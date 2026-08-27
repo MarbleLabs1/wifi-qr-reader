@@ -1,0 +1,27 @@
+# Maintainer: MarbleCeo
+pkgname=wifi-qr-reader
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Scan a WiFi QR code with your webcam and connect via NetworkManager"
+arch=('any')
+url="https://github.com/MarbleLabs1/wifi-qr-reader"
+license=('custom')
+depends=('python' 'python-pyqt5' 'python-pyzbar' 'python-opencv' 'networkmanager' 'zbar')
+makedepends=('python-build' 'python-installer' 'python-wheel')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/MarbleLabs1/wifi-qr-reader/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cd "$pkgname-$pkgver"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+  install -Dm644 packaging/icon.svg \
+    "$pkgdir/usr/share/icons/hicolor/scalable/apps/io.github.marbleceo.WifiQrReader.svg"
+  install -Dm644 packaging/io.github.marbleceo.WifiQrReader.desktop \
+    "$pkgdir/usr/share/applications/io.github.marbleceo.WifiQrReader.desktop"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

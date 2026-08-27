@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=WiFi QR Reader
+Comment=Scan a WiFi QR code with your webcam and connect
+Comment[pt_BR]=Leia um QR code de WiFi com a câmera e conecte
+Exec=wifi-qr-reader
+Icon=io.github.marbleceo.WifiQrReader
+Categories=Network;Utility;
+Keywords=wifi;qr;qrcode;network;camera;
+Terminal=false
+StartupNotify=true
